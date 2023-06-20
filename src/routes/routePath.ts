@@ -4,5 +4,6 @@ export const routePath = {
   register: '/auth/register',
   forgotPassword: '/auth/forgot-password',
   dashboard: '/dashboard',
+  algorithm: '/algorithm',
   notFound: '*',
 }

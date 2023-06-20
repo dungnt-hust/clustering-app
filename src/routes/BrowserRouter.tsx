@@ -7,6 +7,7 @@ import RegisterPage from '~/pages/auth/register'
 import DashboardPage from '~/pages/dashboard'
 import HomePage from '~/pages/home'
 import { routePath } from './routePath'
+import AlgorithmPage from '~/pages/algorithm'
 
 const BrowserRouter = () => {
   const router = createBrowserRouter([
@@ -47,6 +48,14 @@ const BrowserRouter = () => {
       element: (
         <DefaultLayout>
           <DashboardPage />
+        </DefaultLayout>
+      ),
+    },
+    {
+      path: routePath.algorithm,
+      element: (
+        <DefaultLayout>
+          <AlgorithmPage />
         </DefaultLayout>
       ),
     },
